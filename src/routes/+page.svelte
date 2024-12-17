@@ -11,7 +11,7 @@
 <div
 	style="transform:translateX({m.x - circle_size * 0.5}px) translateY({m.y -
 		circle_size * 0.5}px); width:{circle_size}px; height:{circle_size}px;"
-	class="fixed left-0 top-0 -z-20 bg-mouse-radial"
+	class="fixed left-0 top-0 -z-20 bg-mouse-radial opacity-50"
 ></div>
 <div class="fixed left-0 top-0 -z-30 h-screen w-screen bg-[#00172D]"></div>
 
