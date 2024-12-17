@@ -5,9 +5,12 @@ import type { Config } from 'tailwindcss';
 
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
-
   theme: {
-    extend: {}
+    extend: {
+      backgroundImage: {
+        'mouse-radial': 'radial-gradient(circle, rgba(2,56,110,0.5) 0%, rgba(255,255,255,0) 50%)',
+      }
+    }
   },
 
   plugins: [typography, forms, containerQueries]
