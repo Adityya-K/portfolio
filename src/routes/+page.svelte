@@ -39,6 +39,8 @@
 				is my hope that I can augment great software like artificial intelligence with great
 				hardware like robots.
 			</p>
+			<Project />
+			<Project />
 		</div>
 	</div>
 </div>
