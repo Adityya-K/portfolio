@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Project from '$lib/project.svelte';
+	import image1 from '$lib/test.jpg';
 	let m = $state({ x: 0, y: 0 });
 	let circle_size = $state(1000);
 	function handleMousemove(event: MouseEvent) {
@@ -41,16 +42,7 @@
 					hardware like robots.
 				</p>
 			</div>
-			<Project
-				title="Title"
-				body="Hallo I had the very best of the best education"
-				year="2021-2022"
-			/>
-			<Project
-				title="Title"
-				body="Hallo I had the very best of the best education"
-				year="2021-2022"
-			/>
+			<Project title="Title" body="Hallo I had the very best of the best education" src={image1} />
 		</div>
 	</div>
 </div>
