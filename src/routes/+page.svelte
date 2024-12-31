@@ -9,7 +9,6 @@
 	let width = $state(0);
 	let section = $state(0);
 	let circle_size = $state(1000);
-	let element: HTMLElement;
 	function handleMousemove(event: MouseEvent) {
 		m.x = event.clientX;
 		m.y = event.clientY;
@@ -30,12 +29,7 @@
 ></div>
 <div class="fixed left-0 top-0 -z-30 h-screen w-screen bg-[#00172D]"></div>
 
-<div
-	class="flex w-screen justify-center"
-	onmousemove={handleMousemove}
-	role="region"
-	bind:this={element}
->
+<div class="flex w-screen justify-center" onmousemove={handleMousemove} role="region">
 	<div class="grid w-full max-w-[1200px] pt-7 lg:grid-cols-7 lg:pt-32">
 		<div
 			class="w-full self-start px-4 pr-16 text-blue-100 lg:sticky lg:top-32 lg:col-span-3 xl:px-0"
