@@ -3,6 +3,7 @@
 	import Project from '$lib/project.svelte';
 	import Experience from '$lib/experience.svelte';
 	import image1 from '$lib/test.jpg';
+	import { onMount } from 'svelte';
 	let m = $state({ x: 0, y: 0 });
 	let y = $state(0);
 	let width = $state(0);
@@ -11,6 +12,10 @@
 		m.x = event.clientX;
 		m.y = event.clientY;
 	}
+
+	onMount(() => {
+		console.log(document.body.clientHeight);
+	});
 </script>
 
 <svelte:head>
