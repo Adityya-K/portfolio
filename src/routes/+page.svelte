@@ -40,7 +40,7 @@
 		<div
 			class="w-full self-start px-4 pr-16 text-blue-100 lg:sticky lg:top-32 lg:col-span-3 xl:px-0"
 		>
-			<h1 class="text-5xl font-bold">Adityya Kaushal {section}</h1>
+			<h1 class="text-5xl font-bold">Adityya Kaushal</h1>
 			<h2 class="pt-4 text-2xl">
 				Mechatronics Undergraduate Student at the University of Waterloo
 			</h2>
