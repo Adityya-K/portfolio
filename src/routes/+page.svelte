@@ -33,9 +33,7 @@
 
 <svelte:window bind:scrollY={y} bind:innerWidth={width} />
 
-<div class="absolute right-4 top-4">
-	<Toggle />
-</div>
+<Toggle />
 
 <div
 	style="transform:translateX({m.x - circle_size * 0.5}px) translateY({m.y -
@@ -47,7 +45,7 @@
 <div class="flex w-screen justify-center" onmousemove={handleMousemove} role="region">
 	<div class="grid w-full max-w-[1200px] pt-7 lg:grid-cols-7 lg:pt-32">
 		<div
-			class="w-full self-start px-4 pr-16 text-black lg:sticky lg:top-32 lg:col-span-3 xl:px-0 dark:text-blue-100"
+			class="w-full self-start px-4 pr-16 text-black dark:text-blue-100 lg:sticky lg:top-32 lg:col-span-3 xl:px-0"
 		>
 			<h1 class="text-5xl font-bold">Adityya Kaushal</h1>
 			<h2 class="pt-4 text-2xl">
@@ -107,7 +105,7 @@
 		</div>
 		<div class="w-full lg:col-span-4" id="schooling">
 			<div
-				class="px-4 pb-4 pt-4 text-lg leading-loose text-gray-800 lg:pt-0 dark:text-blue-200 dark:opacity-50"
+				class="px-4 pb-4 pt-4 text-lg leading-loose text-gray-800 dark:text-blue-200 dark:opacity-50 lg:pt-0"
 				id="about"
 			>
 				<p>

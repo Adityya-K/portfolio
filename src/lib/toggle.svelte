@@ -53,21 +53,19 @@
 	// End of code from Github User CaptainCodeman
 </script>
 
-<label class="inline-flex cursor-pointer items-center">
-	<!-- To avoid svelte complaining -->
-	<input type="checkbox" value="" class="peer sr-only" />
+<label class="absolute right-4 top-4">
 	{#if dark}
 		<Icon
 			icon="mdi:weather-sunny"
 			height={30}
-			class="mr-1 text-blue-900 opacity-70 dark:text-blue-200"
+			class="text-blue-900 opacity-70 dark:text-blue-200"
 			onclick={toggle}
 		/>
 	{:else}
 		<Icon
 			icon="mdi:weather-night"
-			height={25}
-			class="ml-1 text-blue-900 opacity-70 dark:text-blue-200"
+			height={30}
+			class="text-blue-900 opacity-70 dark:text-blue-200"
 			onclick={toggle}
 		/>
 	{/if}
