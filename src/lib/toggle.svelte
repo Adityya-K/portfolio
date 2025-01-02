@@ -2,6 +2,8 @@
 	import Icon from '@iconify/svelte';
 	import { onMount } from 'svelte';
 
+	// The following code is from Github User CaptainCodeman
+
 	// indicate if we're in dark mode or not
 	let dark: boolean;
 
@@ -48,6 +50,7 @@
 			localStorage.removeItem('theme');
 		}
 	}
+	// End of code from Github User CaptainCodeman
 </script>
 
 <label class="inline-flex cursor-pointer items-center">
