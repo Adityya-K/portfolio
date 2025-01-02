@@ -25,14 +25,14 @@
 <div
 	style="transform:translateX({m.x - circle_size * 0.5}px) translateY({m.y -
 		circle_size * 0.5}px); width:{circle_size}px; height:{circle_size}px;"
-	class="fixed left-0 top-0 -z-20 bg-mouse-radial opacity-50"
+	class="dark:bg-mouse-radial-dark fixed left-0 top-0 -z-20 bg-mouse-radial opacity-50"
 ></div>
-<div class="fixed left-0 top-0 -z-30 h-screen w-screen bg-[#00172D]"></div>
+<div class="fixed left-0 top-0 -z-30 h-screen w-screen bg-white dark:bg-[#00172D]"></div>
 
 <div class="flex w-screen justify-center" onmousemove={handleMousemove} role="region">
 	<div class="grid w-full max-w-[1200px] pt-7 lg:grid-cols-7 lg:pt-32">
 		<div
-			class="w-full self-start px-4 pr-16 text-blue-100 lg:sticky lg:top-32 lg:col-span-3 xl:px-0"
+			class="w-full self-start px-4 pr-16 text-black lg:sticky lg:top-32 lg:col-span-3 xl:px-0 dark:text-blue-100"
 		>
 			<h1 class="text-5xl font-bold">Adityya Kaushal</h1>
 			<h2 class="pt-4 text-2xl">
@@ -91,23 +91,26 @@
 			</div>
 		</div>
 		<div class="w-full lg:col-span-4" id="schooling">
-			<div class="px-4 pb-4 pt-4 text-lg leading-loose text-blue-200 opacity-50 lg:pt-0" id="about">
+			<div
+				class="px-4 pb-4 pt-4 text-lg leading-loose text-gray-800 lg:pt-0 dark:text-blue-200 dark:opacity-50"
+				id="about"
+			>
 				<p>
 					I am a university undergraduate student about the intersection between software and
-					hardware, particularily in the field of <b class="text-blue-50 opacity-100">robotics</b>.
-					It is my hope that I can augment great software like artificial intelligence with great
-					hardware like robots.
+					hardware, particularily in the field of <b class="opacity-100">robotics</b>. It is my hope
+					that I can augment great software like artificial intelligence with great hardware like
+					robots.
 				</p>
 				<p class="pt-3">
 					I am a university undergraduate student about the intersection between software and
-					hardware, particularily in the field of <b class="text-blue-50 opacity-100">robotics</b>.
-					It is my hope that I can augment great software like artificial intelligence with great
-					hardware like robots.
+					hardware, particularily in the field of <b class="opacity-100">robotics</b>. It is my hope
+					that I can augment great software like artificial intelligence with great hardware like
+					robots.
 				</p>
 			</div>
 			<div use:inview={options} oninview_enter={() => (section = 1)}>
 				<div class="py-4">
-					<hr class="h-px border-blue-200 opacity-50" />
+					<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 				</div>
 				<Experience
 					title="University of Waterloo | Mechatronics Engineering"
@@ -131,7 +134,7 @@
 			</div>
 			<div use:inview={options} oninview_enter={() => (section = 2)}>
 				<div class="py-4">
-					<hr class="h-px border-blue-200 opacity-50" />
+					<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 				</div>
 				<Experience
 					title="Midnight Sun | Firmware Developer"
@@ -166,8 +169,8 @@
 				/>
 			</div>
 			<div use:inview={options} oninview_enter={() => (section = 3)}>
-				<div class="py-4" id="projects">
-					<hr class="h-px border-blue-200 opacity-50" />
+				<div class="py-4">
+					<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 				</div>
 				<Project
 					link="https://github.com/Adityya-K/LudusUltimateTicTacToe"
@@ -195,7 +198,7 @@
 				/>
 			</div>
 			<div class="py-4">
-				<hr class="h-px border-blue-200 opacity-50" />
+				<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 			</div>
 		</div>
 	</div>
