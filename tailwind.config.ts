@@ -14,5 +14,7 @@ export default {
     }
   },
 
+  darkMode: 'class',
+
   plugins: [typography, forms, containerQueries]
 } satisfies Config;

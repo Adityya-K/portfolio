@@ -4,6 +4,7 @@
 	import Experience from '$lib/experience.svelte';
 	import image1 from '$lib/test.jpg';
 	import { inview, type Options } from 'svelte-inview';
+	import Toggle from '$lib/toggle.svelte';
 	let m = $state({ x: 0, y: 0 });
 	let y = $state(0);
 	let width = $state(0);
@@ -18,14 +19,28 @@
 
 <svelte:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script>
+		if (
+			localStorage.theme === 'dark' ||
+			(!localStorage.theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+		) {
+			document.documentElement.classList.add('dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+		}
+	</script>
 </svelte:head>
 
 <svelte:window bind:scrollY={y} bind:innerWidth={width} />
 
+<div class="absolute right-4 top-4">
+	<Toggle />
+</div>
+
 <div
 	style="transform:translateX({m.x - circle_size * 0.5}px) translateY({m.y -
 		circle_size * 0.5}px); width:{circle_size}px; height:{circle_size}px;"
-	class="dark:bg-mouse-radial-dark fixed left-0 top-0 -z-20 bg-mouse-radial opacity-50"
+	class="fixed left-0 top-0 -z-20 bg-mouse-radial opacity-50 dark:bg-mouse-radial-dark"
 ></div>
 <div class="fixed left-0 top-0 -z-30 h-screen w-screen bg-white dark:bg-[#00172D]"></div>
 
