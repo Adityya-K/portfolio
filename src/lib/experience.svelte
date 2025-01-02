@@ -2,7 +2,7 @@
 	let { year, body, title, link } = $props();
 </script>
 
-<a href={link}>
+<a href={link} target="_blank">
 	<div
 		class="grid w-full grid-cols-4 rounded-md border-solid px-4 py-4 text-black hover:bg-blue-300 hover:bg-opacity-5 hover:text-blue-400 dark:text-blue-200"
 	>
@@ -11,7 +11,9 @@
 		</div>
 		<div class="col-span-3">
 			<h1 class="text-xl font-bold">{title}</h1>
-			<h2 class="text-base text-gray-800 opacity-75 hover:text-blue-200 dark:text-blue-200">
+			<h2
+				class="text-base text-gray-800 opacity-75 hover:text-gray-800 dark:text-blue-200 dark:hover:text-blue-200"
+			>
 				{body}
 			</h2>
 		</div>
