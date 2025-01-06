@@ -33,7 +33,9 @@
 
 <svelte:window bind:scrollY={y} bind:innerWidth={width} />
 
-<Toggle />
+<div class="absolute right-4 top-4">
+	<Toggle />
+</div>
 
 <div
 	style="transform:translateX({m.x - circle_size * 0.5}px) translateY({m.y -
@@ -121,7 +123,12 @@
 					robots.
 				</p>
 			</div>
-			<div use:inview={options} oninview_enter={() => (section = 1)}>
+			<div
+				use:inview={options}
+				oninview_change={(event) => {
+					if (event.detail.inView) section = 1;
+				}}
+			>
 				<div class="py-4">
 					<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 				</div>
@@ -145,7 +152,12 @@
 					link="https://turnerfenton.peelschools.org/ib"
 				/>
 			</div>
-			<div use:inview={options} oninview_enter={() => (section = 2)}>
+			<div
+				use:inview={options}
+				oninview_change={(event) => {
+					if (event.detail.inView) section = 2;
+				}}
+			>
 				<div class="py-4">
 					<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 				</div>
@@ -181,7 +193,12 @@
 					link="https://turnerfenton.peelschools.org/ib"
 				/>
 			</div>
-			<div use:inview={options} oninview_enter={() => (section = 3)}>
+			<div
+				use:inview={options}
+				oninview_change={(event) => {
+					if (event.detail.inView) section = 3;
+				}}
+			>
 				<div class="py-4">
 					<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 				</div>
@@ -213,6 +230,7 @@
 			<div class="py-4">
 				<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 			</div>
+			<div id="projects"></div>
 		</div>
 	</div>
 </div>
