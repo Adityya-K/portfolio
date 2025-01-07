@@ -22,10 +22,6 @@
 		rootMargin: '-25%',
 		threshold: 0.1
 	};
-
-	const options_section2: Options = {
-		threshold: 0.5
-	};
 </script>
 
 <svelte:head>
@@ -180,7 +176,7 @@
 				>
 			</div>
 			<div
-				use:inview={options_section2}
+				use:inview={options}
 				oninview_change={(event) => {
 					if (event.detail.inView) section = 2;
 				}}
