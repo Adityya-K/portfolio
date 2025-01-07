@@ -327,12 +327,11 @@
 					link="https://drive.google.com/drive/folders/1uxgCvnGchgtoQBvpl_lhSSkPfS44gjUW?usp=sharing"
 					src={robot}
 					title="Distrobot | LEGO EV3, RobotC, SolidWorks"
-					>Created a robot using <b>LEGO EV3</b> that could pick up and sort payloads by color and
-					drop them off at specific destination marked by lines. The project implmented a
-					<b>PID line-follow algorithm</b>
-					along with many other functions coded using <b>RobotC</b>. The payloads were designed in
-					<b>SolidWorks</b>
-					and <b>3D printed</b>
+					>A <b>LEGO EV3</b> robot that could pick up and sort payloads by color and drop them off
+					at specific destination marked by lines. The RobotC code implmented a
+					<b>PID line-follow algorithm</b> and a very basic <b>finite state machine</b>. The colored
+					packages were designed in <b>SolidWorks</b> and then <b>3D-printed</b> using different colors
+					of filaments.
 				</Project>
 			</div>
 			<div class="py-4">
