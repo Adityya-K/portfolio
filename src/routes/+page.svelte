@@ -2,7 +2,11 @@
 	import Icon from '@iconify/svelte';
 	import Project from '$lib/project.svelte';
 	import Experience from '$lib/experience.svelte';
-	import image1 from '$lib/test.jpg';
+	import tic_tac_toe from '$lib/tic_tac_toe.png';
+	import soar from '$lib/soar.png';
+	import green_days from '$lib/green_days.png';
+	import portfolio_icon from '$lib/portfolio-icon.png';
+	import robot from '$lib/robot.png';
 	import { inview, type Options } from 'svelte-inview';
 	import Toggle from '$lib/toggle.svelte';
 	let m = $state({ x: 0, y: 0 });
@@ -15,9 +19,13 @@
 		m.y = event.clientY;
 	}
 	const options: Options = {
-		threshold: 0.25
+		rootMargin: '-25%',
+		threshold: 0.1
 	};
-	// TODO: Add proper options for each section so it scrolls properly
+
+	const options_section2: Options = {
+		threshold: 0.5
+	};
 </script>
 
 <svelte:head>
@@ -111,7 +119,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="w-full lg:col-span-4" id="schooling">
+		<div class="w-full lg:col-span-4">
 			<div
 				class="px-4 pb-4 pt-4 text-lg leading-loose text-gray-800 dark:text-blue-200 dark:opacity-75 lg:pt-0"
 				id="about"
@@ -128,7 +136,7 @@
 				<ul class="list-disc px-4">
 					<li><b>Frontend Web-Dev</b> (Currently Learning SvelteKit and NextJS)</li>
 					<li><b>Low level programming</b> (Currently Learning Firmware Development in C)</li>
-					<li>
+					<li id="schooling">
 						<b>AI and ML</b> (Starting to Learn about Deep Neural Networks as well as Learning Computer
 						Vision modelling for drone flight)
 					</li>
@@ -172,7 +180,7 @@
 				>
 			</div>
 			<div
-				use:inview={options}
+				use:inview={options_section2}
 				oninview_change={(event) => {
 					if (event.detail.inView) section = 2;
 				}}
@@ -257,7 +265,8 @@
 						Hack the Valley is the hackathon hosted by the University of Toronto's Scarborough
 						Campus. The hackathon allowed me to kickstart my<b>SvelteKit</b> learning journey by
 						building an app with a simple frontend, integrating UI frameworks like
-						<b>Skeleton UI</b>, working with <b>Weather APIs</b> and working with <b>JSON</b>.
+						<b>Skeleton UI</b>, working with <b>Open Meteo Weather API</b> and
+						<b>JSON</b>.
 					</p>
 					<p class="pt-2">
 						As it was my partner and I's first time participating in a hackathon, we were proud to
@@ -284,28 +293,47 @@
 				</div>
 				<Project
 					link="https://github.com/Adityya-K/LudusUltimateTicTacToe"
-					src={image1}
-					title="Ultimate Tic Tac Toe | Java"
-					body="Creating a Ultimate Tic Tac Toe Board in Java Script and a simple game AI with the minimax algorithm"
-				/>
+					src={tic_tac_toe}
+					title="Ultimate Tic Tac Toe | Java, Java Swing, Apache Ant"
+				>
+					Created an tic-tac-toe mini-game with normal and ultimate tic-tac-toe implementations. The
+					users can choose between three levels of AI for each. The normal tic-tac-toe board has an
+					implemnetation of the <b>minimax algorithm.</b>
+				</Project>
 				<Project
 					link="https://github.com/SoarConferenceCA/soarwebsite2024"
-					src={image1}
+					src={soar}
 					title="SOAR Conference Site | NextJS"
-					body="Creating a website for the SOAR Conference using NextJS"
-				/>
+					>Soar is a conference that aims to bridge the gap between middle and high school. As a web
+					developer, I created a simple, yet elegant, <b>responsive user-inferfance</b> in
+					<b>NextJS</b> to help advertise the conference.</Project
+				>
+				<Project
+					link="https://github.com/Adityya-K/green-days"
+					src={green_days}
+					title="Green Days | SvelteKit"
+					>Hackathon project mentioned in the Hack the Valley Extracirricular. Made using <b
+						>SvelteKit</b
+					>
+					and <b>Open Meteo Weather API</b>.</Project
+				>
 				<Project
 					link="https://github.com/Adityya-K/portfolio"
-					src={image1}
+					src={portfolio_icon}
 					title="Portfolio Site | SvelteKit"
-					body="This website which is made in SvelteKit!"
-				/>
+					>A simple Portfolio using <b>SvelteKit</b> and <b>Vercel</b>.</Project
+				>
 				<Project
-					link="https://github.com/Adityya-K/portfolio"
-					src={image1}
-					title="Portfolio Site | SvelteKit"
-					body="This website which is made in SvelteKit!"
-				/>
+					link="https://drive.google.com/drive/folders/1uxgCvnGchgtoQBvpl_lhSSkPfS44gjUW?usp=sharing"
+					src={robot}
+					title="Distrobot | LEGO EV3, RobotC, SolidWorks"
+					>Created a robot using <b>LEGO EV3</b> that could pick up and sort payloads by color and
+					drop them off at specific destination marked by lines. The project implmented a
+					<b>PID line-follow algorithm</b>
+					along with many other functions coded using <b>RobotC</b>. The payloads were designed in
+					<b>SolidWorks</b>
+					and <b>3D printed</b>
+				</Project>
 			</div>
 			<div class="py-4">
 				<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
