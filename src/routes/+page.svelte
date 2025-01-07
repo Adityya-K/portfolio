@@ -242,21 +242,6 @@
 					></Experience
 				>
 				<Experience
-					title="Interact Rotary Club | President"
-					year="2022-2024"
-					link="https://turnerfenton.peelschools.org/ib"
-					>As president I learned to manage a team under and create local community events that
-					helped raise $500+ for charitable causes</Experience
-				>
-				<Experience
-					title="Relay For Life | Tech Captain"
-					year="2022-2024"
-					link="https://www.instagram.com/p/CePuW5sri4Z/"
-					>Relay for life is school club affliated with the Canadian Cancer Society. As Tech Captain
-					I created videos in <b>DaVinci Resolve</b> to promote Relay for Life events that helped raise
-					funds for the Cancer Reasearch</Experience
-				>
-				<Experience
 					title="Hack The Valley 8 | Top 20"
 					year="2023"
 					link="https://devpost.com/software/green-days-301w6t"
@@ -274,12 +259,37 @@
 					</p>
 				</Experience>
 				<Experience
+					title="Interact Rotary Club | President"
+					year="2022-2024"
+					link="https://turnerfenton.peelschools.org/ib"
+					>As president I learned to manage a team under and create local community events that
+					helped raise $500+ for charitable causes</Experience
+				>
+				<Experience
 					title="Relay For Life | Tech Captain"
 					year="2022-2024"
 					link="https://www.instagram.com/p/CePuW5sri4Z/"
 					>Relay for life is school club affliated with the Canadian Cancer Society. As Tech Captain
 					I created videos in <b>DaVinci Resolve</b> to promote Relay for Life events that helped raise
 					funds for the Cancer Reasearch</Experience
+				>
+				<Experience
+					title="Relay For Life | Tech Captain"
+					year="2022-2024"
+					link="https://www.instagram.com/p/CePuW5sri4Z/"
+					>Relay for life is school club affliated with the Canadian Cancer Society. As Tech Captain
+					I created videos in <b>DaVinci Resolve</b> to promote Relay for Life events that helped raise
+					funds for the Cancer Reasearch</Experience
+				>
+				<Experience
+					title="McMaster Start Coding (Now STaBL Foundation) | Junior Mentor and Junior Developer"
+					year="2018-2019"
+					link=""
+					>McMaster Start Coding is a student-led initiative that aims to teach students around the
+					world about coding using a programming language called Elm. As a developer I helped
+					develop a graphical interface in <b>Elm</b> for their Code like Beethovan Camp which explored
+					the intersection of music. As a junior mentor, I helped students learn the fundementals of
+					coding through Elm.</Experience
 				>
 			</div>
 			<div
