@@ -14,7 +14,7 @@
 			<h2
 				class="text-base text-gray-800 opacity-75 hover:text-gray-800 dark:text-blue-200 dark:hover:text-blue-200"
 			>
-				{body}
+				{@html body}
 			</h2>
 		</div>
 	</div>

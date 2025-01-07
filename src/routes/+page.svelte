@@ -14,7 +14,10 @@
 		m.x = event.clientX;
 		m.y = event.clientY;
 	}
-	const options: Options = { threshold: 1 };
+	const options: Options = {
+		threshold: 0.25
+	};
+	// TODO: Add proper options for each section so it scrolls properly
 </script>
 
 <svelte:head>
@@ -53,6 +56,9 @@
 			<h2 class="pt-4 text-2xl">
 				Mechatronics Undergraduate Student at the University of Waterloo
 			</h2>
+			<h3 class="pr-32 pt-2 text-lg opacity-75">
+				<b class="text-xl">&rarr;</b> Currently pursuing <b>Term 1B</b>
+			</h3>
 			<h3 class="pr-32 pt-5 text-lg opacity-75">
 				I like to explore the intersection of software and hardware!
 			</h3>
@@ -107,21 +113,33 @@
 		</div>
 		<div class="w-full lg:col-span-4" id="schooling">
 			<div
-				class="px-4 pb-4 pt-4 text-lg leading-loose text-gray-800 dark:text-blue-200 dark:opacity-50 lg:pt-0"
+				class="px-4 pb-4 pt-4 text-lg leading-loose text-gray-800 dark:text-blue-200 dark:opacity-75 lg:pt-0"
 				id="about"
 			>
 				<p>
-					I am a university undergraduate student about the intersection between software and
-					hardware, particularily in the field of <b class="opacity-100">robotics</b>. It is my hope
-					that I can augment great software like artificial intelligence with great hardware like
-					robots.
+					I am a university undergraduate student interested in various fields of <b
+						class="opacity-100">software</b
+					>
+					and <b class="opacity-100">mechanical</b> engineering. I hope to accumulate experience in
+					both areas to explore the
+					<b class="opacity-100">intersection between hardware and software</b>.
 				</p>
-				<p class="pt-3">
-					I am a university undergraduate student about the intersection between software and
-					hardware, particularily in the field of <b class="opacity-100">robotics</b>. It is my hope
-					that I can augment great software like artificial intelligence with great hardware like
-					robots.
-				</p>
+				<p class="pt-3">My areas of interest as well as my progress in each are...</p>
+				<ul class="list-disc px-4">
+					<li><b>Frontend Web-Dev</b> (Currently Learning SvelteKit and NextJS)</li>
+					<li><b>Low level programming</b> (Currently Learning Firmware Development in C)</li>
+					<li>
+						<b>AI and ML</b> (Starting to Learn about Deep Neural Networks as well as Learning Computer
+						Vision modelling for drone flight)
+					</li>
+					<li>
+						<b>Mechanical Systems</b> (Learned Solid Works and AutoCAD at the University of Waterloo
+						during Term 1A)
+					</li>
+					<li>
+						<b>Robotics</b> (Have built multiple robotic systems throughout highschool and university)
+					</li>
+				</ul>
 			</div>
 			<div
 				use:inview={options}
@@ -134,23 +152,24 @@
 				</div>
 				<Experience
 					title="University of Waterloo | Mechatronics Engineering"
-					body="Currently pursuing an undergraduate degree Mechatronics Engineering"
 					year="2024-Current"
 					link="https://uwaterloo.ca/future-students/programs/mechatronics-engineering"
-				/>
+					>Currently pursuing a Bachelors of Applied Science in Mechatronics Engineering"</Experience
+				>
 				<div id="clubs"></div>
 				<Experience
 					title="EQUEST | Technical Lead and Teacher"
-					body="Technical Lead and Teacher at a tutoring business, Equest."
 					year="2020-Current"
 					link="https://www.equest.ca/"
-				/>
+					>Helped with the business' transition online during the pandemic. Additionally, I am
+					responsible for teacher middle and high school students the basics of coding</Experience
+				>
 				<Experience
 					title="Turner Fenton Secondary School"
-					body="Graduated with the International Baccalaureate Diploma"
 					year="2020-2024"
 					link="https://turnerfenton.peelschools.org/ib"
-				/>
+					>Graduated with the International Baccalaureate Diploma</Experience
+				>
 			</div>
 			<div
 				use:inview={options}
@@ -163,35 +182,96 @@
 				</div>
 				<Experience
 					title="Midnight Sun | Firmware Developer"
-					body="A firmware developer for midnight sun"
 					year="2024-Current"
-					link="https://turnerfenton.peelschools.org/ib"
-				/>
+					link="https://github.com/uw-midsun/fwxv/tree/watchdog"
+				>
+					<p>
+						From the team I am able to learn the basics of <b>
+							Firmware Development and Embedded systems programming
+						</b>
+						by coding in <b>C</b> and using the <b>STM32 boards.</b>
+					</p>
+					<p class="pt-2">
+						My current contribution was coding an independent watchdog timer using the STM32F10x
+						Peripheral Drivers. I am in the process of physically testing my code so it can be
+						merged into the main branch of the codebase!
+					</p>
+				</Experience>
 				<Experience
 					title="WARG | Autonomy Developer"
-					body="A autonomy developer for the waterloo ariel robotics group"
-					year="2020-2024"
+					year="2024-Current"
 					link="https://turnerfenton.peelschools.org/ib"
-				/>
+					><p>
+						Being on the Autonomy team is allowing me to learn about various <b>
+							autonomous systems while enforcing software engineering principles
+						</b>
+						such as object oriented programming. My tasks usually deal with coding in <b>Python</b> and
+						understanding the basics of the codebase.
+					</p>
+					<p class="pt-2">
+						Currently, I am rewriting a function that is responsible for restarting workers in a
+						<b>FIFO queue</b> while validating and preserving the data each worker holds.
+					</p></Experience
+				>
 				<Experience
 					title="Turner Hacks | Co-Director"
-					body="One of the directors for Turner Hacks"
 					year="2023-2024"
-					link="https://turnerfenton.peelschools.org/ib"
-				/>
+					link="https://www.instagram.com/turnerhacks/"
+				>
+					With clear <b>communication</b> and collaborative <b>leadership</b>, I led a team of 10
+					executive members to organize a hackathon at <b>Sheridan College</b>, sponsored by
+					<b
+						>Peel District School Board, Make Stuff Move, Youth Culture, Brampton Innovation
+						District, Sheridan College and Zebra Robotics</b
+					>.
+				</Experience>
 				<Experience
-					title="Math and Computing | Vice President"
-					body="Vice President of Math and Computing at Turner Fenton"
+					title="Math and Computing | Vice President and Founder"
 					year="2023-2024"
-					link="https://turnerfenton.peelschools.org/ib"
-				/>
-
+					link="https://www.instagram.com/tfssmcc/"
+					>Founded a club that aimed to prepare students for Waterloo Math and Computing
+					competitions. The club taught me valuable <b>presentation and organizational skills</b
+					></Experience
+				>
 				<Experience
-					title="Math and Computing | Vice President"
-					body="Vice President of Math and Computing at Turner Fenton"
-					year="2023-2024"
+					title="Interact Rotary Club | President"
+					year="2022-2024"
 					link="https://turnerfenton.peelschools.org/ib"
-				/>
+					>As president I learned to manage a team under and create local community events that
+					helped raise $500+ for charitable causes</Experience
+				>
+				<Experience
+					title="Relay For Life | Tech Captain"
+					year="2022-2024"
+					link="https://www.instagram.com/p/CePuW5sri4Z/"
+					>Relay for life is school club affliated with the Canadian Cancer Society. As Tech Captain
+					I created videos in <b>DaVinci Resolve</b> to promote Relay for Life events that helped raise
+					funds for the Cancer Reasearch</Experience
+				>
+				<Experience
+					title="Hack The Valley 8 | Top 20"
+					year="2023"
+					link="https://devpost.com/software/green-days-301w6t"
+				>
+					<p>
+						Hack the Valley is the hackathon hosted by the University of Toronto's Scarborough
+						Campus. The hackathon allowed me to kickstart my<b>SvelteKit</b> learning journey by
+						building an app with a simple frontend, integrating UI frameworks like
+						<b>Skeleton UI</b>, working with <b>Weather APIs</b> and working with <b>JSON</b>.
+					</p>
+					<p class="pt-2">
+						As it was my partner and I's first time participating in a hackathon, we were proud to
+						recieve <b>Top 20</b>.
+					</p>
+				</Experience>
+				<Experience
+					title="Relay For Life | Tech Captain"
+					year="2022-2024"
+					link="https://www.instagram.com/p/CePuW5sri4Z/"
+					>Relay for life is school club affliated with the Canadian Cancer Society. As Tech Captain
+					I created videos in <b>DaVinci Resolve</b> to promote Relay for Life events that helped raise
+					funds for the Cancer Reasearch</Experience
+				>
 			</div>
 			<div
 				use:inview={options}

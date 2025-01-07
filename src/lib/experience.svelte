@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { year, body, title, link } = $props();
+	let { year, title, link, children } = $props();
 </script>
 
 <a href={link} target="_blank">
@@ -11,11 +11,11 @@
 		</div>
 		<div class="col-span-3">
 			<h1 class="text-xl font-bold">{title}</h1>
-			<h2
+			<div
 				class="text-base text-gray-800 opacity-75 hover:text-gray-800 dark:text-blue-200 dark:hover:text-blue-200"
 			>
-				{body}
-			</h2>
+				{@render children()}
+			</div>
 		</div>
 	</div>
 </a>

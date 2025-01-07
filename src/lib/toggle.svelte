@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
 	import { onMount } from 'svelte';
-
 	// The following code is from Github User CaptainCodeman
 
 	// indicate if we're in dark mode or not
