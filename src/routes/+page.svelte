@@ -52,9 +52,9 @@
 <div class="fixed left-0 top-0 -z-30 h-screen w-screen bg-white dark:bg-[#00172D]"></div>
 
 <div class="flex w-screen justify-center" onmousemove={handleMousemove} role="region">
-	<div class="grid w-full max-w-[1200px] pt-7 lg:grid-cols-7 lg:pt-32">
+	<div class="grid w-full max-w-[1200px] pt-7 lg:grid-cols-7 lg:pt-[17vh]">
 		<div
-			class="w-full self-start px-4 pr-16 text-black dark:text-blue-100 lg:sticky lg:top-32 lg:col-span-3 xl:px-0"
+			class="w-full self-start px-4 pr-16 text-black dark:text-blue-100 lg:sticky lg:top-[17vh] lg:col-span-3 xl:px-0"
 		>
 			<h1 class="text-5xl font-bold">Adityya Kaushal</h1>
 			<h2 class="pt-4 text-2xl">
