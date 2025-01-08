@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { link, src, children, title } = $props();
+	let { link, src, children, title, tools } = $props();
 </script>
 
 <a href={link} target="_blank">
@@ -14,7 +14,11 @@
 			</div>
 		</div>
 		<div class="col-span-3">
-			<h1 class="text-xl font-bold">{title}</h1>
+			<div class="flex justify-between">
+				<h1 class="pr-2 text-xl font-bold">{title}</h1>
+				<div class="border-l-2 border-solid border-black dark:border-white sm:border-none"></div>
+				<h2 class="pl-2 text-lg">{tools}</h2>
+			</div>
 			<h2
 				class="text-base text-gray-800 opacity-75 hover:text-gray-800 dark:text-blue-200 dark:hover:text-blue-200"
 			>

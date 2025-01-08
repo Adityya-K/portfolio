@@ -309,14 +309,16 @@
 				<Project
 					link="https://github.com/Adityya-K/portfolio"
 					src={portfolio_icon}
-					title="Portfolio Site | SvelteKit"
+					title="Portfolio Site"
+					tools="SvelteKit 5.0, TailwindCSS"
 					>The site you are seeing right now which is implemented using <b>SvelteKit</b> and
 					deployed on <b>Vercel</b>!</Project
 				>
 				<Project
 					link="https://drive.google.com/drive/folders/1uxgCvnGchgtoQBvpl_lhSSkPfS44gjUW?usp=sharing"
 					src={robot}
-					title="Distrobot | LEGO EV3, RobotC, SolidWorks"
+					title="Distrobot"
+					tools="LEGO EV3, RobotC, SolidWorks"
 					>A <b>LEGO EV3</b> robot that could collect, sort and drop off packages by color to
 					specific destination marked by lines. The RobotC code for the robot implmented a
 					<b>PID line-follow algorithm</b> and a <b>finite state machine</b>. The colored packages
@@ -325,7 +327,8 @@
 				<Project
 					link="https://github.com/Adityya-K/soar_website_2024"
 					src={soar}
-					title="SOAR Conference Site | NextJS"
+					title="SOAR Conference Site"
+					tools="NextJS, TailwindCSS"
 					>Soar is a conference that aims to bridge the gap between middle and high school. As a web
 					developer, I created a simple, yet elegant, <b>responsive user-interface</b> in
 					<b>NextJS</b> to help advertise the conference. The website is deployed on
@@ -334,7 +337,8 @@
 				<Project
 					link="https://github.com/Adityya-K/green-days"
 					src={green_days}
-					title="Green Days | SvelteKit"
+					title="Green Days"
+					tools="SvelteKit 4.0, TailwindCSS, Skeleton UI"
 					>Hackathon project mentioned in the Hack the Valley Extracurricular. The site was made
 					using <b>SvelteKit</b>
 					as the meta-framework. Javascript's await/async API was used to source weather information
@@ -343,7 +347,8 @@
 				<Project
 					link="https://github.com/Adityya-K/LudusUltimateTicTacToe"
 					src={tic_tac_toe}
-					title="Ultimate Tic Tac Toe | Java, Java Swing, Apache Ant"
+					title="Ultimate Tic Tac Toe"
+					tools="Java, Java Swing, Apache Ant"
 				>
 					<p>
 						Created an tic-tac-toe mini-game with normal and ultimate tic-tac-toe implementations.
