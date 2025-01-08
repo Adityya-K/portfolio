@@ -190,7 +190,7 @@
 					link="https://github.com/uw-midsun/fwxv/tree/watchdog"
 				>
 					<p>
-						From the team I am able to learn the basics of <b>
+						As a team member, I learn the basics of <b>
 							Firmware Development and Embedded systems programming
 						</b>
 						by coding in <b>C</b> and using the <b>STM32 boards.</b>
@@ -299,7 +299,7 @@
 					implemnetation of the <b>minimax algorithm.</b>
 				</Project>
 				<Project
-					link="https://github.com/SoarConferenceCA/soarwebsite2024"
+					link="https://github.com/Adityya-K/soar_website_2024"
 					src={soar}
 					title="SOAR Conference Site | NextJS"
 					>Soar is a conference that aims to bridge the gap between middle and high school. As a web
