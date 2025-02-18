@@ -166,7 +166,8 @@
 					year="2020-Current"
 					link="https://www.equest.ca/"
 					>Helped with the business' transition online during the pandemic. Additionally, I am
-					responsible for teacher middle and high school students the basics of coding</Experience
+					responsible for teaching middle and high school students the basics of STEM subjects and
+					coding</Experience
 				>
 				<Experience
 					title="Turner Fenton Secondary School"
