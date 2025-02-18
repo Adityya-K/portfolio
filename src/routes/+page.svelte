@@ -110,8 +110,13 @@
 						<Icon icon="mdi:linkedin" height={35} />
 					</a>
 				</div>
-				<a href="https://github.com/Adityya-K/">
-					<Icon icon="mdi:github" height={35} />
+				<div class="pr-5">
+					<a href="https://github.com/Adityya-K/">
+						<Icon icon="mdi:github" height={35} />
+					</a>
+				</div>
+				<a href="mailto:adityya.kaushal@uwaterloo.ca">
+					<Icon icon="mdi:email-outline" height={35} />
 				</a>
 			</div>
 		</div>
@@ -166,14 +171,15 @@
 					year="2020-Current"
 					link="https://www.equest.ca/"
 					>Helped with the business' transition online during the pandemic. Additionally, I am
-					responsible for teaching middle and high school students the basics of STEM subjects and
-					coding</Experience
+					responsible for teacher middle and high school students the basics of coding and STEM
+					subjects</Experience
 				>
 				<Experience
 					title="Turner Fenton Secondary School"
 					year="2020-2024"
 					link="https://turnerfenton.peelschools.org/ib"
-					>Graduated with the International Baccalaureate Diploma</Experience
+					>Graduated with the International Baccalaureate Diploma and Ontario Secondary School
+					Diploma</Experience
 				>
 			</div>
 			<div
@@ -191,15 +197,15 @@
 					link="https://github.com/uw-midsun/fwxv/tree/watchdog"
 				>
 					<p>
-						From the team I am able to learn the basics of <b>
-							Firmware Development and Embedded systems programming
-						</b>
-						by coding in <b>C</b> and using the <b>STM32 boards.</b>
+						Midnight Sun is a student design team that designs <b>solar-powered cars</b>! As a new
+						firmware developer, I learn the basics of
+						<b> Firmware Development and Embedded systems programming </b>
+						by coding in <b>C</b> and using <b>STM32 boards.</b>
 					</p>
 					<p class="pt-2">
 						My current contribution was coding an independent watchdog timer using the STM32F10x
-						Peripheral Drivers. I am in the process of physically testing my code so it can be
-						merged into the main branch of the codebase!
+						Peripheral Drivers. I am in the process of testing my code so it can be merged into the
+						main branch of the codebase!
 					</p>
 				</Experience>
 				<Experience
@@ -207,15 +213,16 @@
 					year="2024-Current"
 					link="https://turnerfenton.peelschools.org/ib"
 					><p>
-						Being on the Autonomy team is allowing me to learn about various <b>
-							autonomous systems while enforcing software engineering principles
-						</b>
-						such as object oriented programming. My tasks usually deal with coding in <b>Python</b> and
-						understanding the basics of the codebase.
+						WARG is an <b>aerial robotics</b> student design team that designs autonomous drones!
+						Being on the Autonomy team is allowing me to learn about various
+						<b> autonomous systems while enforcing software engineering principles </b>
+						such as <b>object oriented programming.</b> My tasks usually deal with coding in
+						<b>Python</b> and understanding the basics of the codebase.
 					</p>
 					<p class="pt-2">
-						Currently, I am rewriting a function that is responsible for restarting workers in a
-						<b>FIFO queue</b> while validating and preserving the data each worker holds.
+						Currently, I am rewriting a function that is responsible for restarting process workers
+						in a
+						<b>FIFO queue</b> while validating and preserving the data that each worker holds.
 					</p></Experience
 				>
 				<Experience
@@ -223,20 +230,27 @@
 					year="2023-2024"
 					link="https://www.instagram.com/turnerhacks/"
 				>
-					With clear <b>communication</b> and collaborative <b>leadership</b>, I led a team of 10
-					executive members to organize a hackathon at <b>Sheridan College</b>, sponsored by
-					<b
-						>Peel District School Board, Make Stuff Move, Youth Culture, Brampton Innovation
-						District, Sheridan College and Zebra Robotics</b
-					>.
+					<p>
+						With clear <b>communication</b> and collaborative <b>leadership</b>, I led a team of 10
+						executive members to organize a hackathon at <b>Sheridan College</b>, sponsored by
+						<b
+							>Peel District School Board, Make Stuff Move, Youth Culture, Brampton Innovation
+							District, Sheridan College and Zebra Robotics</b
+						>.
+					</p>
+					<p class="pt-2">
+						The hackathon had a turnout of <b>over 50 students</b> who, along with our corporate partners,
+						had positive reviews!
+					</p>
 				</Experience>
 				<Experience
-					title="Math and Computing | Vice President and Founder"
+					title="Math and Computing | Vice President and Co-Founder"
 					year="2023-2024"
 					link="https://www.instagram.com/tfssmcc/"
-					>Founded a club that aimed to prepare students for Waterloo Math and Computing
-					competitions. The club taught me valuable <b>presentation and organizational skills</b
-					></Experience
+					>Math and Computing is a club that I co-founded to prepare students for Waterloo Math and
+					Computing competitions. The club taught me valuable <b
+						>presentation and organizational skills</b
+					> that I use in my day-to-day as a university student to communicate and act on various ideas.</Experience
 				>
 				<Experience
 					title="Hack The Valley 8 | Top 20"
@@ -259,8 +273,10 @@
 					title="Interact Rotary Club | President"
 					year="2022-2024"
 					link="https://turnerfenton.peelschools.org/ib"
-					>As president I learned to manage a team under and create local community events that
-					helped raise $500+ for charitable causes</Experience
+					>Interact is a charitable school club affiliated with Rotary International. As president I
+					learned to manage a team of executive and create local community events that helped raise <b
+						>$500+</b
+					> for charitable causes.</Experience
 				>
 				<Experience
 					title="Relay For Life | Tech Captain"
@@ -275,10 +291,10 @@
 					year="2018-2019"
 					link=""
 					>McMaster Start Coding is a student-led initiative that aims to teach students around the
-					world about coding using a programming language called Elm. As a developer I helped
-					develop a graphical interface in <b>Elm</b> for their Code like Beethovan Camp which explored
-					the intersection of music. As a junior mentor, I helped students learn the fundementals of
-					coding through Elm.</Experience
+					world about coding using a programming language called <b>Elm</b>. As a <b>developer</b> I
+					helped develop a <b>graphical interface</b> in <b>Elm</b> for McMaster Start Coding's Code
+					like Beethovan Camp which explored the intersection of music and code. As a
+					<b>junior mentor</b>, I helped students learn the fundementals of coding through Elm.</Experience
 				>
 			</div>
 			<div
@@ -291,46 +307,60 @@
 					<hr class="h-px border-gray-900 opacity-50 dark:border-blue-200" />
 				</div>
 				<Project
-					link="https://github.com/Adityya-K/LudusUltimateTicTacToe"
-					src={tic_tac_toe}
-					title="Ultimate Tic Tac Toe | Java, Java Swing, Apache Ant"
-				>
-					Created an tic-tac-toe mini-game with normal and ultimate tic-tac-toe implementations. The
-					users can choose between three levels of AI for each. The normal tic-tac-toe board has an
-					implemnetation of the <b>minimax algorithm.</b>
-				</Project>
-				<Project
-					link="https://github.com/SoarConferenceCA/soarwebsite2024"
-					src={soar}
-					title="SOAR Conference Site | NextJS"
-					>Soar is a conference that aims to bridge the gap between middle and high school. As a web
-					developer, I created a simple, yet elegant, <b>responsive user-inferfance</b> in
-					<b>NextJS</b> to help advertise the conference.</Project
-				>
-				<Project
-					link="https://github.com/Adityya-K/green-days"
-					src={green_days}
-					title="Green Days | SvelteKit"
-					>Hackathon project mentioned in the Hack the Valley Extracirricular. Made using <b
-						>SvelteKit</b
-					>
-					and <b>Open Meteo Weather API</b>.</Project
-				>
-				<Project
 					link="https://github.com/Adityya-K/portfolio"
 					src={portfolio_icon}
-					title="Portfolio Site | SvelteKit"
-					>A simple Portfolio using <b>SvelteKit</b> and <b>Vercel</b>.</Project
+					title="Portfolio Site"
+					tools="SvelteKit 5.0, TailwindCSS"
+					>The site you are seeing right now which is implemented using <b>SvelteKit</b> and
+					deployed on <b>Vercel</b>!</Project
 				>
 				<Project
 					link="https://drive.google.com/drive/folders/1uxgCvnGchgtoQBvpl_lhSSkPfS44gjUW?usp=sharing"
 					src={robot}
-					title="Distrobot | LEGO EV3, RobotC, SolidWorks"
-					>A <b>LEGO EV3</b> robot that could pick up and sort payloads by color and drop them off
-					at specific destination marked by lines. The RobotC code implmented a
-					<b>PID line-follow algorithm</b> and a very basic <b>finite state machine</b>. The colored
-					packages were designed in <b>SolidWorks</b> and then <b>3D-printed</b> using different colors
-					of filaments.
+					title="Distrobot"
+					tools="LEGO EV3, RobotC, SolidWorks"
+					>A <b>LEGO EV3</b> robot that could collect, sort and drop off packages by color to
+					specific destination marked by lines. The RobotC code for the robot implmented a
+					<b>PID line-follow algorithm</b> and a <b>finite state machine</b>. The colored packages
+					were designed in <b>SolidWorks</b> and then <b>3D-printed</b> using different colors of filaments.
+				</Project>
+				<Project
+					link="https://github.com/Adityya-K/soar_website_2024"
+					src={soar}
+					title="SOAR Conference Site"
+					tools="NextJS, TailwindCSS"
+					>Soar is a conference that aims to bridge the gap between middle and high school. As a web
+					developer, I created a simple, yet elegant, <b>responsive user-interface</b> in
+					<b>NextJS</b> to help advertise the conference. The website is deployed on
+					<b>Vercel</b>.</Project
+				>
+				<Project
+					link="https://github.com/Adityya-K/green-days"
+					src={green_days}
+					title="Green Days"
+					tools="SvelteKit 4.0, TailwindCSS, Skeleton UI"
+					>Hackathon project mentioned in the Hack the Valley Extracurricular. The site was made
+					using <b>SvelteKit</b>
+					as the meta-framework. Javascript's await/async API was used to source weather information
+					from the <b>Open Meteo Weather API</b>.</Project
+				>
+				<Project
+					link="https://github.com/Adityya-K/LudusUltimateTicTacToe"
+					src={tic_tac_toe}
+					title="Ultimate Tic Tac Toe"
+					tools="Java, Java Swing, Apache Ant"
+				>
+					<p>
+						Created an tic-tac-toe mini-game with normal and ultimate tic-tac-toe implementations.
+						The users can choose between three levels of AI for each. Local storage for past games
+						was implemented by writing to a local file. <b>Swing</b> was used to create a user-friendly
+						and appealing UI.
+					</p>
+					<p class="pt-2">
+						The normal tic-tac-toe computer player has an implemnetation of the <b
+							>minimax algorithm</b
+						> which creates a tree of all possible moves and chooses the best one!
+					</p>
 				</Project>
 			</div>
 			<div class="py-4">
